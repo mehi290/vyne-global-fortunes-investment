@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A1A3B;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(135deg, #0A1A3B 0%, #1C2F5E 100%);
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-right {
+  animation: slideRight 20s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-right {
+    animation: none;
+  }
+}
